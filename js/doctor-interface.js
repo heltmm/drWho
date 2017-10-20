@@ -4,7 +4,7 @@ let display = function(doctors){
   $('#doctors').html('');
   doctors.forEach(function(doctor){
     $('#doctors').append(
-      `<div class='card bg-light mb-3'><div class='card-body'>${doctor.title} ${doctor.first_name} ${doctor.last_name} ${doctor.accepting_patients} ${doctor.city} ${doctor.state} ${doctor.street} ${doctor.street2} ${doctor.zip} ${doctor.name} ${doctor.specialty} ${doctor.website} ${doctor.phone}</div></div>`
+      `<div class='card bg-light mb-3'><div class='card-body'> ${doctor.title} ${doctor.first_name} ${doctor.last_name}, Accepting patients: ${doctor.accepting_patients}<br>${doctor.city}, ${doctor.state}, ${doctor.street}, zip: ${doctor.zip}<br>${doctor.specialty}<br>Website: ${doctor.website}<br>Phone: ${doctor.phone}</div></div>`
 
     );
   });

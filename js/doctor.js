@@ -38,7 +38,6 @@ export class DoctorSearch{
         street: doctor.practices[0].visit_address.street,
         street2: doctor.practices[0].visit_address.street2,
         zip: doctor.practices[0].visit_address.zip,
-        name: doctor.practices[0].name,
         specialty: doctor.specialties[0].description,
         website: doctor.practices[0].website,
         phone: doctor.practices[0].phones[0].number
