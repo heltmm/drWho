@@ -45,8 +45,7 @@ export class DoctorSearch{
       });
       display(returned_doctors);
       }, function(error) {
-        console.log(error);
-
+        alert(`Error: ${error}`);
     });
   }
 }
